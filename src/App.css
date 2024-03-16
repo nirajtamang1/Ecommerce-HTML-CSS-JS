@@ -91,6 +91,29 @@ a {
   padding: 9.6rem 2.4rem;
 }
 
+/* wave  */
+.custom-shape-divider-bottom-1710499936 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1710499936 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 119px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1710499936 .shape-fill {
+  fill: #ffffff;
+}
+
 :is(
     .section-extra-product,
     .section-blog,
