@@ -1,0 +1,52 @@
+[
+{
+    "id":1,
+    "name": "Laptop",
+    "category":"Computers",
+    "brand":"ExampleBrand",
+    "price":999.99,
+    "stock":50,
+    "description":"This is a laptop",
+    "image":"../images/laptop.jpg"
+},
+ {
+    "id":2,
+    "name": "mouse",
+    "category":"Gadge",
+    "brand":"ExampleBrand",
+    "price":929.99,
+    "stock":510,
+    "description":"This is a Mouse",
+    "image":"../image/mouse.jpg"
+},
+{
+    "id":3,
+    "name": "Keyboard",
+    "category":"Gadge",
+    "brand":"ExampleBrand",
+    "price":1000,
+    "stock":50,
+    "description":"This is a laptop",
+    "image":"../images/keyboard.jpg"
+},
+{
+    "id":4,
+    "name": "Smart Phone",
+    "category":"mobile",
+    "brand":"ExampleBrand",
+    "price":9239.99,
+    "stock":50,
+    "description":"This is a Smartphone",
+    "image":"../images/laptop.jpg"
+},
+{
+    "id":5,
+    "name": "Charger",
+    "category":"Computers",
+    "brand":"ExampleBrand",
+    "price":929.99,
+    "stock":510,
+    "description":"This is a Charger",
+    "image":"../image/mouse.jpg"
+}
+]
