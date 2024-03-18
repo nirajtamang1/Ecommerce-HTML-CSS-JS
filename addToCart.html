@@ -59,6 +59,77 @@
       </section>
     </header>
 
+    <!-- Add to cart Start  -->
+    <section class="addToCartElement">
+      <div class="container">
+        <section>
+          <div id="productCartContainer"></div>
+        </section>
+        <section class="productCartTotalElem">
+          <div class="productCartTotalElement">
+            <p>Select Offer Summary</p>
+            <div class="productOrderTotal">
+              <div>
+                <p>Sub Total:</p>
+                <p class="productSubTotal">0</p>
+              </div>
+              <div>
+                <p>Tax:</p>
+                <p class="productTax">Rs. 50</p>
+              </div>
+              <hr />
+              <div>
+                <p>Final Total:</p>
+                <p class="productFinalTotal">0</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Add to cart End  -->
+
+    <!-- Start Product template Section   -->
+    <template id="productCartTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="" />
+          </div>
+          <h2 class="productName"></h2>
+          <div class="productRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="productDescription"></p>
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+          <div class="productStockElement">
+            <p class="productProperty">Total Stocks Available:</p>
+            <p class="productStock"></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button remove-to-cart-button">
+            Remove
+          </button>
+        </article>
+      </div>
+    </template>
+    <!-- End Product template Section   -->
+
     <!-- Footer Section Start   -->
     <footer class="section-footer">
       <div class="footer-container container">
@@ -103,6 +174,6 @@
       </div>
     </footer>
     <!-- Footer Section End   -->
-    <script type="module" src="main.js"></script>
+    <script type="module" src="showAddToCartCards.js"></script>
   </body>
 </html>
