@@ -3,6 +3,7 @@ import { fetchQuantityFromCartLS } from "./fetchQuantityFromCartLS";
 import { getCartProductFromLS } from "./getCartProductFromLS";
 import { incrementDecrement } from "./incrementDecrement";
 import { removeProdFromCart } from "./removeProdFromCart";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 
 let cartProduct = getCartProductFromLS();
 
@@ -29,9 +30,11 @@ const showCartProduct = () => {
       lSActualData.quantity;
     productClone.querySelector(".productPrice").textContent =
       lSActualData.price;
-    productClone.querySelector(".stockElement").addEventListener("click", (event)=>{
-      incrementDecrement(event, id, stock, price)
-    })
+    productClone
+      .querySelector(".stockElement")
+      .addEventListener("click", (event) => {
+        incrementDecrement(event, id, stock, price);
+      });
 
     productClone
       .querySelector(".remove-to-cart-button")
@@ -41,3 +44,5 @@ const showCartProduct = () => {
   });
 };
 showCartProduct();
+
+updateCartProductTotal();

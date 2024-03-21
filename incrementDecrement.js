@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProductFromLS";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 
 export const incrementDecrement = (event, id, stock, price) => {
   const currentCardElement = document.querySelector(`#card${id}`);
@@ -42,4 +43,10 @@ export const incrementDecrement = (event, id, stock, price) => {
   });
   console.log(updatedCart);
   localStorage.setItem("cartProductsLS", JSON.stringify(updatedCart));
+
+  //   also we need to update reflect the changes on the screen
+  productQuantity.innerText = quantity;
+  productPrice.innerText = localStoragePrice;
+
+  updateCartProductTotal();
 };
