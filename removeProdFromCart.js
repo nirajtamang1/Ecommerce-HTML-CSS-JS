@@ -11,5 +11,6 @@ export const removeProdFromCart = (productId) => {
   if (removeDiv) {
     removeDiv.remove();
   }
+  
   updateCartValue(cartProducts);
 };
